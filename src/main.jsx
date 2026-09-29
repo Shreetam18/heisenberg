@@ -8,10 +8,10 @@ import Layout from './components/Layout'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <Layout>
-        <App />
-      </Layout>
-    </BrowserRouter>
+<BrowserRouter basename="/heisenberg">
+  <Layout>
+    <App />
+  </Layout>
+</BrowserRouter>
   </StrictMode>,
 )
