@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0b0b;
+  color: #f5f5f5;
+}
+
+.welcome {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 80px 10%;
+}
+
+.welcome-text {
+  max-width: 700px;
+}
+
+.eyebrow {
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: 0.5;
+  margin-bottom: 35px;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.95;
+  margin: 0;
+  letter-spacing: -4px;
+}
+
+h1 span {
+  opacity: 0.45;
+}
+
+.subtitle {
+  margin-top: 35px;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.55;
+}
+
+.welcome-gif {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.welcome-gif iframe {
+  display: block;
+  border: none;
+  border-radius: 12px;
+}
+
+.gif-credit {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+.gif-credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gif-credit a:hover {
+  opacity: 1;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #080808;
+  border-top: 1px solid #252525;
+  color: #777;
+}
+
+.footer-content {
+  min-height: 90px;
+  padding: 20px 8%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.footer-brand {
+  color: #aaa;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.footer-promo {
+  text-align: center;
+}
+
+.footer-promo a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-promo a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-meta {
+  color: #555;
+}
+
+.gif-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.page-button {
+  appearance: none;
+  background: transparent;
+  border: 1px solid #252525;
+  color: #777;
+  padding: 9px 14px;
+  font-family: monospace;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+
+  /* Needed because Routine is an <a> */
+  text-decoration: none;
+  display: inline-block;
+}
+
+.page-button:hover {
+  color: #f5f5f5;
+  border-color: #555;
+  background: #111;
+}
+
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .welcome {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .welcome-gif iframe {
+    width: 320px;
+    height: 370px;
+  }
+}

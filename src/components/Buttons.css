@@ -1,0 +1,24 @@
+.page-button {
+  appearance: none;
+  background: transparent;
+  border: 1px solid #252525;
+  color: #777;
+  padding: 9px 14px;
+  font-family: monospace;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.page-button:hover {
+  color: #f5f5f5;
+  border-color: #555;   
+  background: #111;
+}
