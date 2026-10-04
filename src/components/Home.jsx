@@ -56,9 +56,9 @@ function Home() {
   Study Material
 </Link>
 
-          <button className="page-button">
+          <Link to="/miscellaneous" className="page-button">
             Miscellaneous
-          </button>
+          </Link>
         </div>
       </div>
     </main>
