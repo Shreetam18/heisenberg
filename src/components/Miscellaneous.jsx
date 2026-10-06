@@ -27,7 +27,7 @@ function Miscellaneous() {
                     <div className="file-actions">
                         <button
                             className="page-button"
-                            onClick={() => setPreviewFile('/ComputerScienceSylb.pdf')}
+                            onClick={() => setPreviewFile('./ComputerScienceSylb.pdf')}
                         >
                             Preview
                         </button>
