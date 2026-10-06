@@ -67,14 +67,12 @@ function StudyMaterial() {
                                 </span>
 
                                 <div className="file-actions">
-                                    <a
-                                        href={file.path}
-                                        target="_blank"
-                                        rel="noreferrer"
+                                    <button
                                         className="page-button"
+                                        onClick={() => setPreviewFile(file)}
                                     >
                                         Preview
-                                    </a>
+                                    </button>
 
                                     <a
                                         href={file.path}
@@ -102,14 +100,12 @@ function StudyMaterial() {
                                 </span>
 
                                 <div className="file-actions">
-                                    <a
-                                        href={file.path}
-                                        target="_blank"
-                                        rel="noreferrer"
+                                    <button
                                         className="page-button"
+                                        onClick={() => setPreviewFile(file)}
                                     >
                                         Preview
-                                    </a>
+                                    </button>
 
                                     <a
                                         href={file.path}
